@@ -91,3 +91,10 @@ let contactsectionh4 = document.querySelector(".contact h4");
 let contactsectionp = document.querySelectorAll(".contact p");
 
 contactsectionh4.innerText = siteContent.contact["contact-h4"];
+contactsectionp[0].innerHTML = "<p>123 Way 456 Street<br>Somewhere, USA</p>";
+contactsectionp[1].innerText = siteContent.contact.phone;
+contactsectionp[2].innerText = siteContent.contact.email;
+
+let footerp = document.querySelector("footer p");
+
+footerp.innerText = siteContent.footer.copyright;
