@@ -46,6 +46,12 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
+const Logo2 = document.querySelector("#cta-img");
+Logo2.setAttribute("src", siteContent["cta"]["img-src"]);
+
+let Logo3 = document.querySelector("#middle-img");
+Logo3.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
 let Nav = document.querySelectorAll("nav a");
 
 Nav[0].innerHTML = siteContent.nav["nav-item-1"];
@@ -67,9 +73,6 @@ toptext[0].innerText = siteContent["main-content"]["features-content"];
 
 let toph4 = document.querySelectorAll(".top-content .text-content h4");
 toph4[0].innerText = siteContent["main-content"]["features-h4"];
-
-let ctaimage = document.querySelector("#cta-img");
-ctaimage.src = siteContent.cta["img/logo.png"];
 
 toph4[1].innerText = siteContent["main-content"]["about-h4"];
 
