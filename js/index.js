@@ -101,3 +101,14 @@ contactsectionp[2].innerText = siteContent.contact.email;
 let footerp = document.querySelector("footer p");
 
 footerp.innerText = siteContent.footer.copyright;
+
+let FNavGreen = document.createElement("a");
+FNavGreen.innerHTML = '<a href="#" style="color: green">Lambda</a>';
+
+let LNavGreen = document.createElement("a");
+LNavGreen.innerHTML = "<a href='#' style='color: green'>School</a>";
+
+let nav = document.querySelector("nav");
+nav.prepend(FNavGreen);
+nav.appendChild(LNavGreen);
+Nav.forEach(link => (link.style.color = "green"));
